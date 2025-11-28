@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "./node_modules/.bin/ts-node src/main.ts",
     "test": "./node_modules/.bin/jest",
-    "api:test": "npx stepci run stepci/workflow.yml",
+    "test:api": "npx stepci run stepci/workflow.yml",
     "build": "./node_modules/.bin/ncc build src/main.ts"
   },
   "author": "",
