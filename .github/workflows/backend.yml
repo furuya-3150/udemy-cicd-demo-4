@@ -23,6 +23,7 @@ jobs:
       - run: npm run build
 
       - run: npm run dist/index.js &
+      - run: npx wait-on -t 100000 http://localhost:8080/api/health
       - run: npm run test:api
 
       - uses: actions/upload-artifact@v4
